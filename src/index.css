@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400&family=Special+Elite&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* User Recommended Palette */
+  --color-espresso: #302820;
+  --color-olive: #515b3a;
+  --color-sage: #879477;
+  --color-sage-dark: #748265;
+  --color-sage-light: #9aa889;
+  --color-beige: #e5d5b7;
+  --color-ivory: #f3e9d2;
+  --color-mustard: #c5a253;
+  --color-mustard-hover: #b08f42;
+  --color-walnut: #654735;
+  --color-tan: #a88b68;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #879477;
+  color: #302820;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Vintage Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #748265;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #515b3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #302820;
+}
+
+/* Sage & Olive Board Textures */
+.sage-board-bg {
+  background-color: #879477;
+  background-image: radial-gradient(#748265 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+.olive-board-bg {
+  background-color: #515b3a;
+  background-image: radial-gradient(#424b2e 1.5px, transparent 1.5px);
+  background-size: 18px 18px;
+}
+
+/* Antique Beige & Ivory Paper Cards */
+.antique-paper {
+  background-color: #f3e9d2;
+  border: 2px solid #654735;
+  box-shadow: 0 4px 10px rgba(48, 40, 32, 0.15);
+}
+
+.classified-stamp {
+  font-family: 'Special Elite', monospace;
+  border: 2.5px solid #654735;
+  color: #654735;
+  text-transform: uppercase;
+  transform: rotate(-2deg);
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+}
+
+/* Die-cut sticker styling with white border and 3D lift */
+.vintage-sticker-border {
+  border: 2.5px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 2px 4px 8px rgba(48, 40, 32, 0.22);
+}
+
+/* Red string connecting animations */
+@keyframes stringTension {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; stroke-width: 2.5px; }
+}
+
+.red-string-active {
+  animation: stringTension 3s ease-in-out infinite;
+}
